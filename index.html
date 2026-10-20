@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DailyPulse brings you the latest news, technology updates, sports and insightful articles.">
+  <title>DailyPulse | Latest News & Articles</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      color: #202938;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #12243a;
+      color: white;
+      padding: 25px 7%;
+    }
+
+    header h1 { margin: 0; font-size: 34px; }
+    header p { margin: 5px 0 0; color: #d3dfed; }
+
+    nav {
+      background: white;
+      padding: 14px 7%;
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #ddd;
+    }
+
+    nav a {
+      color: #12243a;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover { color: #1764a0; }
+
+    main {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 18px;
+    }
+
+    .welcome {
+      background: #dceafe;
+      padding: 25px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+    }
+
+    .articles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 22px;
+    }
+
+    article {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 3px 12px #0000000c;
+    }
+
+    .cover {
+      height: 150px;
+      background: #dbe5f1;
+      display: grid;
+      place-items: center;
+      font-size: 48px;
+    }
+
+    .content { padding: 18px; }
+    .category { color: #1764a0; font-size: 14px; font-weight: bold; }
+    article h3 { margin: 8px 0; }
+    article p { color: #586474; }
+
+    .read {
+      display: inline-block;
+      color: #1764a0;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #12243a;
+      color: white;
+      margin-top: 45px;
+    }
+
+    @media (max-width: 500px) {
+      header, nav { padding-left: 18px; padding-right: 18px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>DailyPulse</h1>
+    <p>Your Daily Source of News and Ideas.</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#technology">Technology</a>
+    <a href="#sports">Sports</a>
+    <a href="#world">World News</a>
+  </nav>
+
+  <main>
+    <section class="welcome">
+      <h2>Welcome to DailyPulse</h2>
+      <p>Discover the latest news, explore new ideas, and stay informed about the world.</p>
+    </section>
+
+    <h2>Latest Articles</h2>
+
+    <section class="articles">
+      <article id="technology">
+        <div class="cover">💻</div>
+        <div class="content">
+          <span class="category">TECHNOLOGY</span>
+          <h3>How to Start Learning Programming</h3>
+          <p>Discover the basics of programming and choose the right language for your journey.</p>
+          <a class="read" href="#technology">Read More &rarr;</a>
+        </div>
+      </article>
+
+      <article id="sports">
+        <div class="cover">⚽</div>
+        <div class="content">
+          <span class="category">SPORTS</span>
+          <h3>Why Sports Matter in Everyday Life</h3>
+          <p>Explore the benefits of physical activity and the importance of staying consistent.</p>
+          <a class="read" href="#sports">Read More &rarr;</a>
+        </div>
+      </article>
+
+      <article id="world">
+        <div class="cover">🌍</div>
+        <div class="content">
+          <span class="category">WORLD NEWS</span>
+          <h3>How to Identify Reliable News Sources</h3>
+          <p>Learn simple ways to verify information and avoid spreading misinformation.</p>
+          <a class="read" href="#world">Read More &rarr;</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 DailyPulse. All rights reserved.</p>
+  </footer>
+</body>
+</html>
